@@ -9,11 +9,30 @@ Copyright &copy; All rights reserved 2020
      AOS.init();
     if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
-  var element = document.getElementById("chat_content");
-element.scrollTop = element.scrollHeight;
+
 
 }
+var element = document.getElementById("chat_content");
+// element.addEventListener("scroll", function(){
+//   if(element.scrollTop<element.scrollHeight)
+//   {
 
+//     send.style.visibility="visible";
+//   }
+//   else{
+//     send.style.visibility="hidden";
+//   }
+
+// })
+send = document.getElementById("send_button");
+element = document.getElementById("chat_content");
+element.scrollTop = element.scrollHeight;
+send.addEventListener("click", function(){
+  if(element.scrollTop<element.scrollHeight)
+  {
+    element.scrollTop = element.scrollHeight;
+  }
+})
 
     </script>
   </body>
