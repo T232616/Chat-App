@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
     $msg = $_POST['msg'];
     $username = $_SESSION['username'];
-    $timestamp = date("h:i:sa");
+    $timestamp = date("d/m/Y");
     $sql = "INSERT INTO `messages` (`sno`, `username`, `message`, `timestamp`) VALUES (NULL, '$username', '$msg','$timestamp');";
     $result = mysqli_query($conn, $sql);
 
