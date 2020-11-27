@@ -13,17 +13,6 @@ Copyright &copy; All rights reserved 2020
 
 }
 var element = document.getElementById("chat_content");
-// element.addEventListener("scroll", function(){
-//   if(element.scrollTop<element.scrollHeight)
-//   {
-
-//     send.style.visibility="visible";
-//   }
-//   else{
-//     send.style.visibility="hidden";
-//   }
-
-// })
 send = document.getElementById("send_button");
 element = document.getElementById("chat_content");
 element.scrollTop = element.scrollHeight;
@@ -32,6 +21,15 @@ send.addEventListener("click", function(){
   {
     element.scrollTop = element.scrollHeight;
   }
+})
+element.addEventListener("scroll", function(){
+  if(element.scrollTop===element.scrollHeight){
+    send.style.visibility="hidden";
+  }
+  else{
+    send.style.visibility="visible";
+  }
+  console.log("scroll");
 })
 
     </script>

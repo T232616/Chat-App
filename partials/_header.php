@@ -38,7 +38,7 @@
 
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.6);
   border-radius: 10px;
 }
 
@@ -74,7 +74,7 @@
         </button>
       </div>
       <div class="modal-body">
-       <h4 class="text-center my-2">Are You sure that you want to Logout</h4>
+       <h4 class="text-center my-2">Are You sure that you want to Logout ?</h4>
        <form method="post" action="/chat-app/logout.php">
        <input type="hidden" name="logInfo" value="logout" >
        <button type="submit"  class="btn btn-primary my-4" style="display:block;width:20%;margin:auto;">Logout</button>
