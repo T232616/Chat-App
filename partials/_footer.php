@@ -22,15 +22,6 @@ send.addEventListener("click", function(){
     element.scrollTop = element.scrollHeight;
   }
 })
-element.addEventListener("scroll", function(){
-  if(element.scrollTop===element.scrollHeight){
-    send.style.visibility="hidden";
-  }
-  else{
-    send.style.visibility="visible";
-  }
-  console.log("scroll");
-})
 
     </script>
   </body>
