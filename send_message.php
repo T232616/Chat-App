@@ -1,6 +1,6 @@
 
 <div style="overflow-y:auto;"  class="container-fluid">
-<form method="post" action="/chat-app/chat.php" >
+<form did="send_msg" method="post" action="/chat-app/chat.php" >
 <div class="row">
 <div class="container">
 <div class="row">

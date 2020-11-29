@@ -46,21 +46,7 @@
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
 }
-@media(max-width:1020px){
-  html{
-    font-size:65%;
-  }
-}
-@media(max-width:976px){
-  .nav_buttons{
-    text-align: center;
-  }
-}
-@media(max-width:500px){
-  html{
-    font-size:45%;
-  }
-}
+
     </style>
   </head>
   <body>
