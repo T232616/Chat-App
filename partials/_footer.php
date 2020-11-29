@@ -22,7 +22,12 @@ send.addEventListener("click", function(){
     element.scrollTop = element.scrollHeight;
   }
 })
+$("#send_msg").submit(function(){
+  event.preventDefault();
+  var message = $("#client_message").val();
+  console.log(message);
 
+})
     </script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 include 'partials/_dbconnect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    session_start();
+    // session_start();
     $msg = $_POST['msg'];
     $username = $_SESSION['username'];
     $timestamp = date("d/m/Y");
