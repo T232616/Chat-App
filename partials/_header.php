@@ -35,7 +35,9 @@
 ::-webkit-scrollbar {
   width: 20px;
 }
-
+.nav_buttons{
+  text-align: center;
+}
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgba(0,0,0,0.6);
