@@ -23,6 +23,7 @@ Copyright &copy; All rights reserved 2020
 }
 var element = document.getElementById("chat_content");
 send = document.getElementById("send_button");
+down = document.getElementById("down_button");
 element = document.getElementById("chat_content");
 element.scrollTop = element.scrollHeight;
 send.addEventListener("click", function(){
@@ -31,15 +32,23 @@ send.addEventListener("click", function(){
     element.scrollTop = element.scrollHeight;
   }
 })
+down.addEventListener("click", function(){
+  if(element.scrollTop<element.scrollHeight)
+  {
+    element.scrollTop = element.scrollHeight;
+  }
+})
+
+
 $("#send_msg").submit(function(event){
   var message = $("#client_message").val();
   event.preventDefault();
-  $.post("/chat-app/chat.php",{msg:message})
+  $.post("chat.php",{msg:message})
   $("#client_message").val("");
 
 })
 function check_messages(){
-  $.get("/chat-app/chat.php");
+ console.log("get messages");
 }
 setInterval(check_messages,1000);
     </script>

@@ -63,7 +63,7 @@
       </div>
       <div class="modal-body">
        <h4 class="text-center my-2">Are You sure that you want to Logout ?</h4>
-       <form method="post" action="/chat-app/logout.php">
+       <form method="post" action="logout.php">
        <input type="hidden" name="logInfo" value="logout" >
        <button type="submit"  class="btn btn-primary my-4" style="display:block;width:20%;margin:auto;">Logout</button>
        </form>
@@ -85,7 +85,7 @@
       </div>
       <div class="modal-body">
         <div class="container">
-        <form method="post" action="/chat-app/SignIn.php">
+        <form method="post" action="SignIn.php">
         <input type="hidden" name="logInfo" value="SignIn">
   <div class="form-group">
     <label for="exampleInputEmail1">Enter  username</label>
@@ -123,7 +123,7 @@
       </div>
       <div class="modal-body">
         <div class="container">
-        <form method="post" action="/chat-app/logIn.php">
+        <form method="post" action="logIn.php">
         <input type="hidden" name="logInfo" value="Login">
   <div class="form-group">
     <label for="exampleInputEmail3">Enter your  username</label>

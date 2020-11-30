@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
     data-aos-duration="2000" style="color:#fff;" class="text-center   col-8 mx-auto">Chat with your loved ones using   iChat App</h1>
     </div>
     <div class="row">
-    <a href="/chat-app/chat.php" data-aos="flip-left"
+    <a href="chat.php" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000"  style="text-align: center;" type="button" class="btn btn-outline-light mx-auto col-2 my-3">
     Start Chatting
