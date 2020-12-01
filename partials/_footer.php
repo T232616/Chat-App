@@ -59,7 +59,7 @@ function check_messages(){
   }
  })
 }
-setInterval(check_messages,1000);
+setInterval(check_messages,1);
     </script>
   </body>
 </html>
