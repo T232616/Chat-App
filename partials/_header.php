@@ -49,8 +49,25 @@
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
 }
-.invisible{
-  visibility:hidden;
+@media (max-width:1003px){
+  h1{
+    font-size:2rem;
+  }
+}
+@media (max-width:769px){
+  h1{
+    font-size:1.5rem;
+  }
+}
+@media (max-width:475px){
+  h1{
+    font-size:1.2rem;
+  }
+}
+@media (max-width:350px){
+  h1{
+    font-size:1rem;
+  }
 }
 
     </style>
