@@ -22,7 +22,6 @@ Copyright &copy; All rights reserved 2020
 
 }
 
-var element = document.getElementById("chat_content");
 send = document.getElementById("send_button");
 down = document.getElementById("down_button");
 element = document.getElementById("chat_content");
