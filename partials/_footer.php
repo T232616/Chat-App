@@ -49,10 +49,10 @@ $("#send_msg").submit(function(event){
 })
 function check_messages(){
  $.post('check_messages.php',function(data,status){
-  document.getElementById('chat_content').innerHTML=data;
+  document.getElementById('chat_content').innerHTML = data;
  })
 }
-setInterval(check_messages,1000);
+setInterval(check_messages,100);
     </script>
   </body>
 </html>
