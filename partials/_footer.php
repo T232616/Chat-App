@@ -21,6 +21,7 @@ Copyright &copy; All rights reserved 2020
 
 
 }
+
 var element = document.getElementById("chat_content");
 send = document.getElementById("send_button");
 down = document.getElementById("down_button");
@@ -52,7 +53,7 @@ function check_messages(){
   document.getElementById('chat_content').innerHTML = data;
  })
 }
-setInterval(check_messages,100);
+setInterval(check_messages,1);
     </script>
   </body>
 </html>

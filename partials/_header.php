@@ -48,6 +48,9 @@
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
 }
+.invisible{
+  visibility:hidden;
+}
 
     </style>
   </head>
