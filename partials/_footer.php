@@ -49,11 +49,17 @@ $("#send_msg").submit(function(event){
 
 })
 function check_messages(){
+  let count=1;
  $.post('check_messages.php',function(data,status){
   document.getElementById('chat_content').innerHTML = data;
+  if(count==1){
+    element.scrollTop = element.scrollHeight;
+    count+=1;
+
+  }
  })
 }
-setInterval(check_messages,1);
+setInterval(check_messages,1000);
     </script>
   </body>
 </html>
