@@ -44,12 +44,12 @@ function check_messages(){
 
  $.post('check_messages.php',function(data,status){
   document.getElementById('chat_content').innerHTML = data;
-  if(count==1){
+
     element.scrollTop = element.scrollHeight;
     count+=1;
 
 
-  }
+
   count++;
 
  })
