@@ -14,14 +14,7 @@ Copyright &copy; All rights reserved 2020
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
     <script>
-
-     AOS.init();
-    if ( window.history.replaceState ) {
-  window.history.replaceState( null, null, window.location.href );
-
-
-}
-
+var count=1;
 send = document.getElementById("send_button");
 down = document.getElementById("down_button");
 element = document.getElementById("chat_content");
@@ -48,14 +41,17 @@ $("#send_msg").submit(function(event){
 
 })
 function check_messages(){
-  let count=1;
+
  $.post('check_messages.php',function(data,status){
   document.getElementById('chat_content').innerHTML = data;
   if(count==1){
     element.scrollTop = element.scrollHeight;
     count+=1;
 
+
   }
+  count++;
+
  })
 }
 setInterval(check_messages,1);
